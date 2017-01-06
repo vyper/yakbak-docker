@@ -22,7 +22,7 @@ You'll then replace the endpoint to calls made to `http://localhost:7000`. That'
 Starts it to record and proxy further requests to the given url
 
 ```sh
-docker run --rm -ti yakbak-dockerhttps://google.com
+docker run --rm -ti yakbak-docker https://google.com
 ```
 
 ### Preserving your tapes
@@ -30,7 +30,7 @@ docker run --rm -ti yakbak-dockerhttps://google.com
 This is handy to allow you to share those tapes with your team. As they're just plain js files you can versionate them on git.
 
 ```sh
-docker run --rm -ti -v "$(pwd):/tapes" yakbak-dockerhttps://google.com
+docker run --rm -ti -v "$(pwd):/tapes" yakbak-docker https://google.com
 ```
 
 [0]: https://github.com/flickr/yakbak
